@@ -1,0 +1,11 @@
+<div style="text-align:center">
+  <h3>Hello! Tagify</h3>
+  <div class="row">
+    <div class = "col-sm-6">
+      <form role="form" #searchForm="ngForm" (ngSubmit)="checkTagify(searchForm.value)" novalidate>
+        <tag-input name="keywordsearch" [(ngModel)]='keywords' [placeholder]="'Type and Press Enter'" ([secondaryPlaceholder])="placeHolderString" [maxItems]=5 theme='bootstrap'></tag-input>
+        <button class="btn btn-default" type="submit">Click</button>
+      </form>
+      </div>
+  </div>
+</div>
